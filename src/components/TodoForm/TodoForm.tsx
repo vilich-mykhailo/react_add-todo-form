@@ -16,7 +16,7 @@ function getRandomDigits() {
 }
 
 export const TodoForm: React.FC<Props> = ({ onSubmit }) => {
-  const [id] = useState(() => `${name}-${getRandomDigits()}`);
+  const [id] = useState(() => `todo-${getRandomDigits()}`);
 
   const [title, setTitle] = useState('');
   const [titleError, setTitleError] = useState(false);
